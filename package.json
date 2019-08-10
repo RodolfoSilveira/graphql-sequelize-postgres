@@ -1,0 +1,23 @@
+{
+  "name": "api-graphql-js",
+  "version": "1.0.0",
+  "description": "Criando API com GraphQL no NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trndd/api-graphql-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trndd/api-graphql-js/issues"
+  },
+  "homepage": "https://github.com/trndd/api-graphql-js#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.1"
+  }
+}
