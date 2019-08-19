@@ -1,16 +1,11 @@
 const { GraphQLServer } = require('graphql-yoga');
-const mongoose = require('mongoose');
 const path = require('path');
 
-const resolvers = require('./resolvers');
-
-mongoose.connect('#', {
-    useNewUrlParser: true
-});
+const userResolvers = require('./resolvers/user');
 
 const server = new GraphQLServer({
-    typeDefs: path.resolve(__dirname, 'schema.graphql'),
-    resolvers
+    typeDefs: path.resolve(__dirname, 'typeDefs', 'user.graphql'),
+    resolvers: userResolvers
 });
 
 server.start();
